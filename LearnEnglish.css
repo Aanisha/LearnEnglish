@@ -1,0 +1,97 @@
+ #header
+           {
+                height: 75px;
+    
+                text-align: center;
+     background-color: #50166b;
+}
+#about-us .jumbotron h1
+{
+    font-family: Times New Roman;
+}
+
+.navbar-brand
+{
+    color: white;
+    letter-spacing: .2em;
+    font-family: Raleway;
+    font-size: 25px;
+}
+.navbar-toggler-icons
+{
+    border:2px #443226 solid;
+    padding: 25px;
+}
+#navbarSupportedContent
+{
+    background-color: #50166b;
+}
+#header .custom-navbar a
+{
+    background-color: #50166b;
+}
+.nav-item a
+{
+    color: white;
+}
+#about-us .jumbotron 
+{
+    color: white;
+    background-color: #555555;
+    font-family: Orbitron;
+    text-shadow: 1px 0 10px black;
+}
+#about-us .jumbotron a
+{
+    
+    background-color:#2355c4;
+}
+footer
+{
+    background-color: #383737;
+    color: white;
+    position: absolute;
+    
+    width: 100%;
+}
+#footer p
+{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+#h
+{
+    text-align: center;
+    font-size: 55px;
+    font-style: bold;
+}
+#k,#m
+{
+    text-align: center;
+    font-size: 35px;
+    font-family: Ariel;
+}
+#team
+{
+  display: none;
+}
+#wos
+{
+    display:none;
+}
+#word
+{
+    display:none;
+}
+#f
+{
+  font-family: Sacramento;
+ 
+}
+.lead img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
