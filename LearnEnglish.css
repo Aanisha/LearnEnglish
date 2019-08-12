@@ -8,6 +8,12 @@
    font-family: 'Times New Roman';
  }
 
+ header {
+   position: fixed;
+   top: 0px;
+   width: 100vw;
+ }
+
  .navbar-brand {
    color: white;
    letter-spacing: .2em;
@@ -36,6 +42,27 @@
    background-color: #555555;
    font-family: 'Orbitron';
    text-shadow: 1px 0 10px black;
+   height: 95vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+
+ @media (min-width: 300px) {
+   #about-us .jumbotron {
+     background-image: url('bg-mob.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+ }
+
+ @media (min-width: 750px) {
+   #about-us .jumbotron {
+     background-image: url('bg.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
  }
 
  #about-us .jumbotron a {
@@ -71,14 +98,6 @@
    display: none;
  }
 
- #wos {
-   display: none;
- }
-
- #word {
-   display: none;
- }
-
  #f {
    font-family: 'Sacramento';
  }
@@ -87,4 +106,8 @@
    height: 150px;
    width: 150px;
    border-radius: 50%;
+ }
+
+ section {
+   height: 100vh;
  }
