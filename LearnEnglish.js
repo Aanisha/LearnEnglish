@@ -14,10 +14,11 @@ function voice(text) {
     pitch: 0.93
   });
 }
-// console.log = function() {}
-// console.log = function() {
-//   return null;
-// };
+console.log = function() {}
+console.log = function() {
+  return null;
+};
+
 function shsp() {
   $('#word').css('display', 'block');
   $('#team').css('display', 'none');
