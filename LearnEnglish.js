@@ -5,6 +5,8 @@ $(document).ready(function() {
   partofspeech = $('#partofspeech')[0];
   definition = $('#def')[0];
   givemeaningbtn.click(() => {
+    $('#loading').css('display', 'block');
+    $('#search').css('display', 'none');
     let ttl = lang.textContent;
     givemeaning(ttl);
   })
@@ -67,6 +69,8 @@ function givemeaning(lang) {
     } finally {
       f = "";
       text = "";
+      $('#loading').css('display', 'none');
+      $('#search').css('display', 'block');
     }
     //console.log(JSON.stringify(data[0].shortdef[0], null, 1));
     //console.log(JSON.stringify(data[0].fl, null, 1));

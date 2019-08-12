@@ -7,17 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <link
     href='https://fonts.googleapis.com/css?family=Aguafina Script|Akronim|Aldrich|Alegreya|Alex Brush|Allerta Stencil|Allura|Almendra SC|Amethysta|Annie Use Your Telescope|Arbutus|Arizonia|Asset|Astloch|Bad Script|Barrio|Bellefair|Berkshire Swash|Bilbo|BioRhyme Expanded|Bonbon|Butcherman|Butterfly Kids|Caveat|Charmonman|Cinzel Decorative|Codystar|Crafty Girls|Dawning of a New Day|Faster One|Frijole|Geostar|Give You Glory|Hi Melody|Italianno|Jacques Francois Shadow|KhandMajor Mono Display|Meddon|Miltonian|Monofett|Monoton|Mystery Quest|Nosifer|Orbitron|Petit Formal Script|Sacramento|Shadows Into Light Two|Snowburst One|Dancing Script|Vibur|Raleway'
     rel='stylesheet'>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
   <script src="LearnEnglish.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="LearnEnglish.css">
 
@@ -76,14 +80,20 @@
         <h1 class="text-center"><span id="lang">English</span> Dictionary</h1>
         <br>
         <br>
-        <div class="input-group ">
-
-          <textarea class="form-control align-center" placeholder="Enter Word for meaning" aria-label="With textarea" id="st"></textarea>
+        <div class="md-form">
+          <textarea class="form-control md-textarea" aria-label="With textarea" id="st"></textarea>
+          <label for="st">Word</label>
         </div>
+
 
         <br>
         <div align="center">
-          <button class="btn btn-primary justify-content-center" role="button" id="givemeaning">Submit!</button>
+          <button class="btn btn-primary justify-content-center" role="button" id="givemeaning">
+            <div id="loading"><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Searching...</div>
+            <div id="search">Search</div>
+
+          </button>
         </div>
         <p id="partofspeech"></p>
         <p id="def"></p>

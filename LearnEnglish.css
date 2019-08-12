@@ -108,4 +108,9 @@ footer {
 
 section {
   height: 100vh;
+  padding-top: 75px;
+}
+
+div#loading {
+  display: none;
 }
